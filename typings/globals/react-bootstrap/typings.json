@@ -1,0 +1,8 @@
+{
+  "resolution": "main",
+  "tree": {
+    "src": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/cf77d6c2f4e6868012875813b3f7027952cfe3d1/react-bootstrap/react-bootstrap.d.ts",
+    "raw": "registry:dt/react-bootstrap#0.0.0+20160706182032",
+    "typings": "https://raw.githubusercontent.com/DefinitelyTyped/DefinitelyTyped/cf77d6c2f4e6868012875813b3f7027952cfe3d1/react-bootstrap/react-bootstrap.d.ts"
+  }
+}

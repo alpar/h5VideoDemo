@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "sourceMap": true,
+        "jsx": "react",
+        "watch": true
+    },
+    "files": [
+        "./typings/index.d.ts",
+        "./src/components/Hello.tsx",
+        "./src/index.tsx"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
