@@ -10,7 +10,7 @@
     },
     "files": [
         "./typings/index.d.ts",
-        "./src/components/Hello.tsx",
+        "./src/components/Title.tsx",
         "./src/index.tsx"
     ],
     "exclude": [

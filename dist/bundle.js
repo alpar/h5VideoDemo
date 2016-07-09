@@ -47,8 +47,10 @@
 	"use strict";
 	var React = __webpack_require__(1);
 	var ReactDOM = __webpack_require__(2);
-	var Hello_1 = __webpack_require__(3);
-	ReactDOM.render(React.createElement(Hello_1.Hello, {compiler: "TypeScript", framework: "React", buttonName: "BootstrapTestButton"}), document.getElementById("example"));
+	var Title_1 = __webpack_require__(3);
+	var Canvas_1 = __webpack_require__(270);
+	ReactDOM.render(React.createElement(Title_1.Title, {compiler: "TypeScript", framework: "React", buttonName: "BootstrapTestButton"}), document.getElementById("title"));
+	ReactDOM.render(React.createElement(Canvas_1.Canvas, {type: "default", message: "Your borwser dont support canvas!"}), document.getElementById("canvas"));
 
 
 /***/ },
@@ -75,17 +77,20 @@
 	};
 	var React = __webpack_require__(1);
 	var react_bootstrap_1 = __webpack_require__(4);
-	var Hello = (function (_super) {
-	    __extends(Hello, _super);
-	    function Hello() {
+	/**
+	 * H1 title wiht a special button.Just for test.
+	 */
+	var Title = (function (_super) {
+	    __extends(Title, _super);
+	    function Title() {
 	        _super.apply(this, arguments);
 	    }
-	    Hello.prototype.render = function () {
-	        return React.createElement("h1", null, "Hello from ", this.props.compiler, " and ", this.props.framework, "! ", React.createElement(react_bootstrap_1.Button, {action: "true", block: "false", bsSize: "large", bsStyle: "info"}, "Bootstrap-React"), " ");
+	    Title.prototype.render = function () {
+	        return React.createElement("h1", null, "Hello from ", this.props.compiler, " and ", this.props.framework, "! ", React.createElement(react_bootstrap_1.Button, {action: "true", block: "false", bsSize: "large", bsStyle: "info"}, this.props.buttonName), " ");
 	    };
-	    return Hello;
+	    return Title;
 	}(React.Component));
-	exports.Hello = Hello;
+	exports.Title = Title;
 
 
 /***/ },
@@ -19501,6 +19506,41 @@
 	var _ValidComponentChildren3 = _interopRequireDefault(_ValidComponentChildren2);
 	
 	exports.ValidComponentChildren = _ValidComponentChildren3['default'];
+
+/***/ },
+/* 270 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+	var __extends = (this && this.__extends) || function (d, b) {
+	    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
+	    function __() { this.constructor = d; }
+	    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
+	};
+	var React = __webpack_require__(1);
+	var Canvas = (function (_super) {
+	    __extends(Canvas, _super);
+	    function Canvas() {
+	        _super.apply(this, arguments);
+	    }
+	    Canvas.prototype.render = function () {
+	        var type = this.props.type;
+	        var stage = {
+	            w: 1280,
+	            h: 800
+	        };
+	        switch (type) {
+	            case "fullScreen":
+	                break;
+	            default:
+	                break;
+	        }
+	        return React.createElement("canvas", {width: stage.w, height: stage.h});
+	    };
+	    return Canvas;
+	}(React.Component));
+	exports.Canvas = Canvas;
+
 
 /***/ }
 /******/ ]);

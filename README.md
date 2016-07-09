@@ -1,9 +1,17 @@
-# ts-react-project-module
-React-webpag dealing with Typescript project.See more about ts at typescriptlang.org
+# H5 video with broadway.js 
+
+Depends on:
+
+*  broadway.js.
+*  react.
+*  bootstrap.
+*  webpack.
 
 ## Run
 
 webpack
+
+> node: `npm link typescript`
 
 ## More
 
